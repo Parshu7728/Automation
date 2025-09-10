@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 20 15:04:05 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>744 seconds (744936 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='agc_SmokeTc.Change_of_flag_symbols_TC17.testChangeFlagSuccessfully()'><b>testChangeFlagSuccessfully</b><br>Test class: agc_SmokeTc.Change_of_flag_symbols_TC17</td>
+<td></td>
+<td>61</td>
+<td>agc_SmokeTc.Change_of_flag_symbols_TC17@7d900ecf</td></tr>
+<tr>
+<td title='agc_SmokeTc.LoginAnsellGuardianTC01.loginAnsellGuardian_valid_credentials()'><b>loginAnsellGuardian_valid_credentials</b><br>Test class: agc_SmokeTc.LoginAnsellGuardianTC01</td>
+<td></td>
+<td>17</td>
+<td>agc_SmokeTc.LoginAnsellGuardianTC01@72bc6553</td></tr>
+<tr>
+<td title='agc_SmokeTc.LoginAnsellGuardianTC02.loginAnsellGuardian_InvalidPassword_Credentials()'><b>loginAnsellGuardian_InvalidPassword_Credentials</b><br>Test class: agc_SmokeTc.LoginAnsellGuardianTC02</td>
+<td></td>
+<td>12</td>
+<td>agc_SmokeTc.LoginAnsellGuardianTC02@4bdeaabb</td></tr>
+<tr>
+<td title='agc_SmokeTc.LoginAnsellGuardianTC04.loginAnsellGuardian_Invalid_NewEmailId()'><b>loginAnsellGuardian_Invalid_NewEmailId</b><br>Test class: agc_SmokeTc.LoginAnsellGuardianTC04</td>
+<td></td>
+<td>9</td>
+<td>agc_SmokeTc.LoginAnsellGuardianTC04@6b695b06</td></tr>
+<tr>
+<td title='agc_SmokeTc.LoginAnsellGuardianTC06.loginAnsellGuardian_WithEmaptyPassword()'><b>loginAnsellGuardian_WithEmaptyPassword</b><br>Test class: agc_SmokeTc.LoginAnsellGuardianTC06</td>
+<td></td>
+<td>11</td>
+<td>agc_SmokeTc.LoginAnsellGuardianTC06@4d1bf319</td></tr>
+<tr>
+<td title='agc_SmokeTc.ACS_Chemicals_Sorting_TC09.acs_Chemical_Sorting()'><b>acs_Chemical_Sorting</b><br>Test class: agc_SmokeTc.ACS_Chemicals_Sorting_TC09</td>
+<td></td>
+<td>28</td>
+<td>agc_SmokeTc.ACS_Chemicals_Sorting_TC09@6f01b95f</td></tr>
+<tr>
+<td title='agc_SmokeTc.ACS_Concentration_Sorting_TC10.acs_Concentration_Sorting()'><b>acs_Concentration_Sorting</b><br>Test class: agc_SmokeTc.ACS_Concentration_Sorting_TC10</td>
+<td></td>
+<td>30</td>
+<td>agc_SmokeTc.ACS_Concentration_Sorting_TC10@70cf32e3</td></tr>
+<tr>
+<td title='agc_SmokeTc.LoginAnsellGuardianTC03.loginAnsellGuardian_InvalidEmailId()'><b>loginAnsellGuardian_InvalidEmailId</b><br>Test class: agc_SmokeTc.LoginAnsellGuardianTC03</td>
+<td></td>
+<td>8</td>
+<td>agc_SmokeTc.LoginAnsellGuardianTC03@5a59ca5e</td></tr>
+<tr>
+<td title='agc_SmokeTc.LoginAnsellGuardianTC05.loginAnsellGuardian_EmptyMail()'><b>loginAnsellGuardian_EmptyMail</b><br>Test class: agc_SmokeTc.LoginAnsellGuardianTC05</td>
+<td></td>
+<td>8</td>
+<td>agc_SmokeTc.LoginAnsellGuardianTC05@4f32a3ad</td></tr>
+<tr>
+<td title='agc_SmokeTc.ACS_OtherHazards_Disable_TC14.acs_OtherHazards_Disable()'><b>acs_OtherHazards_Disable</b><br>Test class: agc_SmokeTc.ACS_OtherHazards_Disable_TC14</td>
+<td></td>
+<td>30</td>
+<td>agc_SmokeTc.ACS_OtherHazards_Disable_TC14@66982506</td></tr>
+<tr>
+<td title='agc_SmokeTc.ACS_chemical_tab_Disable_TC15.acs_Chemical_Tab_Disable()'><b>acs_Chemical_Tab_Disable</b><br>Test class: agc_SmokeTc.ACS_chemical_tab_Disable_TC15</td>
+<td></td>
+<td>38</td>
+<td>agc_SmokeTc.ACS_chemical_tab_Disable_TC15@5c80cf32</td></tr>
+<tr>
+<td title='agc_SmokeTc.ACS_Physical_State_Sorting_TC11.acs_PhysicalStateSorting()'><b>acs_PhysicalStateSorting</b><br>Test class: agc_SmokeTc.ACS_Physical_State_Sorting_TC11</td>
+<td></td>
+<td>27</td>
+<td>agc_SmokeTc.ACS_Physical_State_Sorting_TC11@7fd50002</td></tr>
+<tr>
+<td title='agc_SmokeTc.ACS_Cas_Number_Sorting_TC08.acs_CasNumber_Sorting()'><b>acs_CasNumber_Sorting</b><br>Test class: agc_SmokeTc.ACS_Cas_Number_Sorting_TC08</td>
+<td></td>
+<td>32</td>
+<td>agc_SmokeTc.ACS_Cas_Number_Sorting_TC08@6f53b8a</td></tr>
+<tr>
+<td title='agc_SmokeTc.Create_New_Risk_Request_TC18.createNewRiskRequest()'><b>createNewRiskRequest</b><br>Test class: agc_SmokeTc.Create_New_Risk_Request_TC18</td>
+<td></td>
+<td>20</td>
+<td>agc_SmokeTc.Create_New_Risk_Request_TC18@536f2a7e</td></tr>
+<tr>
+<td title='agc_SmokeTc.ACS_selecting_more_than_5_hazards_and_shows_warning_message_TC16.acs_Selecting_MoreThan5Hazards_And_Shows_WarningMessage()'><b>acs_Selecting_MoreThan5Hazards_And_Shows_WarningMessage</b><br>Test class: agc_SmokeTc.ACS_selecting_more_than_5_hazards_and_shows_warning_message_TC16</td>
+<td></td>
+<td>35</td>
+<td>agc_SmokeTc.ACS_selecting_more_than_5_hazards_and_shows_warning_message_TC16@71075444</td></tr>
+</table><p>
+</body>
+</html>

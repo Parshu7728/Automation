@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: agc_SmokeTc.PADD_Crud_operations_on_comments
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.88 s -- in agc_SmokeTc.PADD_Crud_operations_on_comments

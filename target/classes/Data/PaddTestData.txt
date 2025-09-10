@@ -1,0 +1,14 @@
+#------For Padd product Data fetching (...) symbol-----------------
+dotsno1=93-260.360
+dotsno2=58-270
+#-----------------------For PDF URLS------------------------------
+PADDCombinedPdfPath=src/main/resources/Expected-PDF/Combined_AnsellPADD.pdf
+downloadDirPath=Pdfdownload
+#------For Padd table pagenation ---------------------------------
+recordsPerPage1=10
+recordsPerPage2=20
+recordsPerPage3=30
+recordsPerPage4=50
+
+numberOfChemicals1=18
+numberOfChemicals2=100

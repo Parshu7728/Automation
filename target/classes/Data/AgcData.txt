@@ -1,0 +1,70 @@
+Developement_URL               https://gc-development.ansell.com/home
+SignIn_ValidEmailID            parashuram.r@cynnent.com
+SignIn_ValidPassword           #SolarParshu123
+SignIn_BasicEmailID            prasathkumar.a@cynnent.com
+SignIn_BasicPassword           Prasath@123
+SignIn_AdvanceEmailID          kdepankar@gmail.com
+SignIn_AdvancePassword         Suraj@123
+SignIn_InvalidNewEmailID       sachin111@gmail.com
+SignIn_InvalidEmailID          Sach#gmail
+SignIn_InvalidPassword         InvalidPassword
+SignIn_EmptyEmail
+SignIn_EmptyPassword
+OrganisationName               Inunent
+Email                          someone@gmail.com
+Contact_Name                   Parashuram
+SharedTo1                      DeepuKumar
+SharedTo2                      KripaShankerTiwari
+Tel/Mob                        7899087654
+Report_Name                    Cynnent
+HandProduct1                   91-225
+HandProduct2                   09-430.922.924.928
+PaddBpChemical1                Acetaldehyde
+PaddBpChemical2                50-00-0
+PaddHpChemical1                64-19-7
+PaddHpChemical2                Phenol
+BodyProduct1                   4000 CFR
+BodyProduct2                   6000
+Chemical1                      Silver nitrate
+Chemical2                      Varitox
+Unsigned_usr_chemical1         Hydrochloric acid
+Unsigned_usr_chemical2         Varitox
+Cas_No1                        7647-01-0
+Cas_No2                        76-03-9
+MaterialHP1                    Natural Rubber
+MaterialHP2                    Natural Rubber
+Replaceable_Chemical1          indium(III) fluoride
+Replaceable_Cas                7783-52-0
+RePInf                         I am the Best Automation Tester
+OS.name                        Windows
+
+-------------------------------------PTD Data-------------------------------------
+PTD_BP_product1                Alphatec
+BP_product_group               1500 PLUS FR White
+product_name                   AlphaTec
+
+PTD_HP_product2                MICROFLEX
+HP_product_group               25-101.201
+
+----------------------------------New single and mixture in PADD ---------------------
+
+# --- Component 1 ---
+component1.cas=50-00-0
+component1.chemicalName=Formaldehyde
+component1.proportion=80
+component1.physicalState=Liquid
+
+# --- Component 2 ---
+component2.cas=64-17-5
+component2.chemicalName=Ethanol
+component2.proportion=15
+component2.physicalState=Liquid
+
+#--for search textfield
+mixture1 = Mixture 25%
+
+//Note: While doing parallel execution have a look on these datas
+Make sure the admin portal is already prelogged in.
+
+Removable_product=38-001
+Removable_product_name=product38-001

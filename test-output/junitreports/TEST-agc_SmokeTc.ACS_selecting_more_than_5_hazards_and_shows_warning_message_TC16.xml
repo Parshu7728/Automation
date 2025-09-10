@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Default Suite">
+  <test name="Automation">
+    <!-- Add this line -->
+    <parameter name="browser" value="chrome"/>
+
+    <classes>
+      <class name="agc_SmokeTc.ACS_selecting_more_than_5_hazards_and_shows_warning_message_TC16"/>
+    </classes>
+  </test>
+</suite>

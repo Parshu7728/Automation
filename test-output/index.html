@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Smoke_Suite" class="panel Smoke_Suite">
+        </div> <!-- panel Smoke_Suite -->
+        <div panel-name="test-xml-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Automation-AGC\Automation\testNgXml\chromeRunner\chromeSmokeTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Smoke Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;agc_listeners.MonitorListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;agc_SmokeTc.ACS_Physical_State_Sorting_TC11&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.Create_New_Risk_Request_TC18&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.LoginAnsellGuardianTC01&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.ACS_OtherHazards_Disable_TC14&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.ACS_Concentration_Sorting_TC10&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.LoginAnsellGuardianTC03&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.LoginAnsellGuardianTC02&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.ACS_selecting_more_than_5_hazards_and_shows_warning_message_TC16&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.LoginAnsellGuardianTC05&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.LoginAnsellGuardianTC04&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.LoginAnsellGuardianTC06&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.ACS_Cas_Number_Sorting_TC08&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.ACS_chemical_tab_Disable_TC15&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.Change_of_flag_symbols_TC17&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.ACS_Chemicals_Sorting_TC09&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.ACS_Enter_Chemicals_Using_Search_Text_Field_TC07&quot;/&gt;
+      &lt;class name=&quot;agc_SmokeTc.Delete_the_specific_chemical_in_ACS_TC13&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- Smoke Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (17 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Smoke_Suite');
+function tableData_Smoke_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['Smoke_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Smoke_Suite">
+              </div> <!-- times-div-Smoke_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.ACS_Physical_State_Sorting_TC11</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">11914 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acs_PhysicalStateSorting</span>
+                <span class="method-start">11916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">39933 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">42282 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.Create_New_Risk_Request_TC18</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">42678 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">52237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createNewRiskRequest</span>
+                <span class="method-start">52237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">72466 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">78362 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.LoginAnsellGuardianTC01</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">78749 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">101222 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAnsellGuardian_valid_credentials</span>
+                <span class="method-start">101222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">118327 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">123508 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.ACS_OtherHazards_Disable_TC14</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">123877 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">140352 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acs_OtherHazards_Disable</span>
+                <span class="method-start">140353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">170619 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">172940 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.ACS_Concentration_Sorting_TC10</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">173441 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">acs_Concentration_Sorting</span>
+                <span class="method-start">185822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">185822 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">215926 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">218273 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.LoginAnsellGuardianTC03</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">218683 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">245788 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAnsellGuardian_InvalidEmailId</span>
+                <span class="method-start">245788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">254391 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">257633 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.LoginAnsellGuardianTC02</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">258123 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginAnsellGuardian_InvalidPassword_Credentials</span>
+                <span class="method-start">271941 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">271941 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">284104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">287273 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.ACS_selecting_more_than_5_hazards_and_shows_warning_message_TC16</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">287771 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">acs_Selecting_MoreThan5Hazards_And_Shows_WarningMessage</span>
+                <span class="method-start">300931 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">300931 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">336191 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">338491 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.LoginAnsellGuardianTC05</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">339056 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">351583 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAnsellGuardian_EmptyMail</span>
+                <span class="method-start">351583 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">360513 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">364009 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.LoginAnsellGuardianTC04</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">364499 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">380032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAnsellGuardian_Invalid_NewEmailId</span>
+                <span class="method-start">380033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">389181 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">391865 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.LoginAnsellGuardianTC06</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">392541 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginAnsellGuardian_WithEmaptyPassword</span>
+                <span class="method-start">419533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">419533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">430850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">432992 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.ACS_Cas_Number_Sorting_TC08</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">433583 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">445070 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acs_CasNumber_Sorting</span>
+                <span class="method-start">445071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">477533 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">479859 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.ACS_chemical_tab_Disable_TC15</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">480212 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">502116 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acs_Chemical_Tab_Disable</span>
+                <span class="method-start">502116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">540221 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">542552 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.Change_of_flag_symbols_TC17</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">543060 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">572860 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testChangeFlagSuccessfully</span>
+                <span class="method-start">572861 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">634299 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">639403 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.ACS_Chemicals_Sorting_TC09</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">639872 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">acs_Chemical_Sorting</span>
+                <span class="method-start">649971 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">649971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">678542 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">678686 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">agc_SmokeTc.ACS_Enter_Chemicals_Using_Search_Text_Field_TC07</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">679067 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login(chrome)</span>
+                <span class="method-start">689091 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">744632 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

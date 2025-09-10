@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: agc_SmokeTc.PADD_Check_for_standards_EN374_HP
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.63 s -- in agc_SmokeTc.PADD_Check_for_standards_EN374_HP

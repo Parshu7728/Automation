@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="PADD_EndToEnd.Verify_that_user_can_able_to_download_Padd_hp_report">
+        <methods>
+          <include name="Logout"/>
+          <include name="Padd_Hp_report_download"/>
+          <include name="openBrowser"/>
+          <include name="Login"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- PADD_EndToEnd.Verify_that_user_can_able_to_download_Padd_hp_report -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
