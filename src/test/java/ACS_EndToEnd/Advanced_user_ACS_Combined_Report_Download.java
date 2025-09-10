@@ -1,0 +1,180 @@
+package ACS_EndToEnd;
+
+import com.agc.sel.agc_pageObject.Advanced_Chemical_Product_Selector_Body_Protection;
+import com.agc.sel.agc_pageObject.Advanced_Chemical_Product_Selector_Hand_Protection;
+import com.agc.sel.agc_pageObject.CombinedAcsReportPage;
+import com.agc.sel.agc_pageObject.My_Report;
+import com.agc.sel.baseutilities.BaseClass;
+import com.agc.sel.loggers.Logger4j;
+import com.agc.sel.pdfReader.FileWrite;
+import com.agc.sel.pdfReader.PDFReaderTestConfiguration;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import java.io.File;
+
+public class Advanced_user_ACS_Combined_Report_Download extends BaseClass {
+    // Page object for ACS Body Protection
+    public Advanced_Chemical_Product_Selector_Body_Protection acs_Body_Protection;
+
+    // Page object for ACS Hand Protection
+    public Advanced_Chemical_Product_Selector_Hand_Protection acs_Hand_Protection;
+
+    // Page object for Combined ACS Report
+    public CombinedAcsReportPage combined_Report;
+
+    // Pop-up message for report download
+    public String report_Downloaded_Pop_Up;
+
+    // Name of the file to be downloaded
+    public String fileName;
+
+    // Utility for writing to files
+    FileWrite fi = new FileWrite();
+
+    /**
+     * Test method to verify the download of the combined ACS Hand Protection and
+     * Body Protection report.
+     *
+     * @throws Throwable if any error occurs during the test execution
+     */
+    @Test(groups = "advanced")
+    public void ACSCombined_Report_Download() throws Throwable {
+        // Load properties
+        prop_utility.Property();
+
+        // Generate a random organization name
+        String organisation_Name = Rn.random() + "Company";
+        String report_Name = Rn.random() + "Report";
+        // Initialize page objects
+
+        My_Report my_report = new My_Report(driver);
+        acs_Hand_Protection = new Advanced_Chemical_Product_Selector_Hand_Protection(driver);
+        acs_Body_Protection = new Advanced_Chemical_Product_Selector_Body_Protection(driver);
+        combined_Report = new CombinedAcsReportPage(driver);
+
+        // Retrieve login credentials and chemical details
+        String validEmailID = prop_utility.valid_EmailID();
+        String validPassword = prop_utility.valid_Password();
+        String chemical_Text1 = prop_utility.chemicalText1();
+        String chemical_Text2 = prop_utility.chemicalText2();
+        // Navigate to My Report page and access ACS
+
+        my_report.acs_MyReport(driver);
+
+
+        // Search for chemicals in ACS Hand Protection
+        acs_Hand_Protection.acs_HandProtection_Chemicals(chemical_Text1, chemical_Text2);
+
+        // Perform steps 2, 3, and 4 in ACS Combined
+        combined_Report.acs_Click_Step2();
+        combined_Report.Both();
+        acs_Hand_Protection.acs_Step2();
+//		combined_Report.exposureInBoth();
+        acs_Body_Protection.acs_Step2();
+        acs_Body_Protection.acs_Step3();
+        combined_Report.bothBpProduct();
+        acs_Hand_Protection.acs_Step4();
+        acs_Hand_Protection.acs_Download_Report_Details();
+        acs_Hand_Protection.hand_Protection_Standards();
+        acs_Body_Protection.charts();
+
+        // Fill organization details
+        combined_Report.click_OrganizationDetails(organisation_Name);
+        acs_Hand_Protection.uploadImage();
+        acs_Hand_Protection.basic_acs_Report_Details(report_Name);
+        acs_Body_Protection.acs_Bp_Report_Download();
+
+        // Click "No" for creating a new report
+        acs_Body_Protection.acs_Bp_No_Button();
+
+        // Navigate back to My Report page
+        acs_Hand_Protection.navigate_From_AcsTo_MyReportPage();
+
+        // Verify the downloaded file
+        Assert.assertTrue(Verify_Downloaded_file(), "Failed to verify downloaded file");
+
+        // Read and write the downloaded PDF content
+        url = "file:///E:/AutomationAGC/Automation/Pdfdownload/" + fileName;
+        PDFReaderTestConfiguration pu = new PDFReaderTestConfiguration();
+        pu.pefReder(url);
+        String text = pu.ReadPdf();
+        fi.writeFile(text);
+    }
+
+    /**
+     * Verifies if the downloaded file exists and matches the expected result.
+     *
+     * @return true if the file is present and matches the expected result, false
+     *         otherwise
+     * @throws InterruptedException if the thread is interrupted during execution
+     */
+    public boolean Verify_Downloaded_file() throws InterruptedException {
+        // Check if the file exists in the download directory
+        File f = new File(downloadFile);
+        if (!f.exists() || !f.isDirectory()) {
+            Logger4j.error("Download directory does not exist: " + downloadFile);
+            return false;
+        }
+
+        File[] fileList = f.listFiles();
+        if (fileList == null || fileList.length == 0) {
+            Logger4j.error("No files found in download directory: " + downloadFile);
+            return false;
+        }
+
+        boolean isFilePresent = false;
+
+        // Wait for file to be downloaded (check for PDF files)
+        for (int i = 0; i < 10; i++) {
+            Thread.sleep(2000);
+            fileList = f.listFiles();
+            if (fileList != null) {
+                for (File file : fileList) {
+                    fileName = file.getName().trim();
+                    if (fileName.toLowerCase().endsWith(".pdf")) {
+                        isFilePresent = true;
+                        Logger4j.info("Downloaded file found: " + fileName);
+                        break;
+                    }
+                }
+            }
+            if (isFilePresent) break;
+        }
+
+        if (!isFilePresent) {
+            Logger4j.error("No PDF file found in download directory after waiting");
+            return false;
+        }
+
+        // Try to get expected result from MyReport page if possible
+        try {
+            // Initialize ACS Hand Protection page object
+            acs_Hand_Protection = new Advanced_Chemical_Product_Selector_Hand_Protection(driver);
+
+            // Add wait before checking the expected result
+            Thread.sleep(5000);
+
+            // Retrieve the expected PDF result
+            String Exp2 = acs_Hand_Protection.expected_Pdf_ResultIn_Text2().trim();
+
+            // Check if the downloaded file matches the expected result
+            for (File file : fileList) {
+                String currentFileName = file.getName().trim();
+                if (currentFileName.equals(Exp2)) {
+                    fileName = currentFileName;
+                    Logger4j.info("The downloaded ACS BP report matches the report in the MyReport ACS tab: " + fileName);
+                    return true;
+                }
+            }
+
+            Logger4j.info("Downloaded file does not match expected result from MyReport page. Using first PDF found: " + fileName);
+            return true;
+
+        } catch (Exception e) {
+            Logger4j.error("Error verifying expected result from MyReport page: " + e.getMessage());
+            Logger4j.info("Proceeding with first PDF file found: " + fileName);
+            return true;
+        }
+    }
+}

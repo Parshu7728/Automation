@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" parallel="tests" thread-count="3">
+
+<listeners>
+		<listener class-name="com.agc.sel.listeners.MonitorListener" />
+	</listeners>
+	
+	
+   <test name="ChromeTest">
+   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.agc.sel.regressionTc.Login_Regression_TestSuite"/>
+      <class name="com.agc.sel.regressionTc.ACS_BodyProtection_Report_Download"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_hp_report"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_bp_report"/>
+      <class name="com.agc.sel.regressionTc.ACS_HandProtection_Report_Download"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_combined_report"/>
+      <class name="com.agc.sel.regressionTc.ACS_Combined_Report_Download"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="EdgeTest">
+   <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="com.agc.sel.regressionTc.Login_Regression_TestSuite"/>
+      <class name="com.agc.sel.regressionTc.ACS_BodyProtection_Report_Download"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_hp_report"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_bp_report"/>
+      <class name="com.agc.sel.regressionTc.ACS_HandProtection_Report_Download"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_combined_report"/>
+      <class name="com.agc.sel.regressionTc.ACS_Combined_Report_Download"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FirefoxTest">
+   <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.agc.sel.regressionTc.Login_Regression_TestSuite"/>
+      <class name="com.agc.sel.regressionTc.ACS_BodyProtection_Report_Download"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_hp_report"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_bp_report"/>
+      <class name="com.agc.sel.regressionTc.ACS_HandProtection_Report_Download"/>
+      <class name="com.agc.sel.regressionTc.Verify_that_user_can_able_to_download_Padd_combined_report"/>
+      <class name="com.agc.sel.regressionTc.ACS_Combined_Report_Download"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->

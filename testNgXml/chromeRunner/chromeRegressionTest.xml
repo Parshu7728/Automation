@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" parallel="tests" thread-count="3">
+    <listeners><listener class-name="com.agc.sel.listeners.MonitorListener"/></listeners>
+
+   <test name="ChromeTest">
+   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+        <class name="ACS_EndToEnd.ACS_BodyProtection_Report_Download"/>
+        <class name="ACS_EndToEnd.ACS_Combined_Report_Download"/>
+        <class name="ACS_EndToEnd.ACS_HandProtection_Report_Download"/>
+        <class name="PADD_EndToEnd.Verify_that_user_can_able_to_download_Padd_hp_report"/>
+        <class name="PADD_EndToEnd.Verify_that_user_can_able_to_download_Padd_bp_report"/>
+        <class name="PADD_EndToEnd.Verify_that_user_can_able_to_download_Padd_combined_report"/>
+        <class name="ACS_EndToEnd.Basic_user_ACS_Combined_Report_Download"/>
+        <class name="ACS_EndToEnd.Basic_user_ACS_HandProtection_Report_Download"/>
+        <class name="ACS_EndToEnd.Basic_user_ACS_BodyProtection_Report_Download"/>
+        <class name="ACS_EndToEnd.Advanced_user_ACS_Combined_Report_Download"/>
+        <class name="ACS_EndToEnd.Advanced_user_ACS_HandProtection_Report_Download"/>
+        <class name="ACS_EndToEnd.Advanced_user_ACS_BodyProtection_Report_Download"/>
+        <class name="PTD_Regression_TC.Ansell_usr_HP_ptd_TC"/>
+        <class name="PTD_Regression_TC.Ansell_usr_BP_ptd_TC"/>
+        <class name="PTD_Regression_TC.Basic_usr_HP_ptd_TC"/>
+        <class name="PTD_Regression_TC.Basic_usr_BP_ptd_TC"/>
+        <class name="PTD_Regression_TC.Advanced_usr_HP_ptd_TC"/>
+        <class name="PTD_Regression_TC.Advanced_usr_BP_ptd_TC"/>
+        <class name="Login_MonkeyTesting.Login_Regression_TestSuite"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

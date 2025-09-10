@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite" parallel="tests" thread-count="3">
+    <listeners><listener class-name="com.agc.sel.listeners.MonitorListener"/></listeners>
+	<parameter name="browser" value="chrome" />
+
+	<test name="ChromeTest">
+
+    		<classes>
+			<class name="agc_SmokeTc.LoginAnsellGuardianTC01"/>
+			<class name="agc_SmokeTc.LoginAnsellGuardianTC02"/>
+			<class name="agc_SmokeTc.LoginAnsellGuardianTC03"/>
+			<class name="agc_SmokeTc.LoginAnsellGuardianTC04"/>
+			<class name="agc_SmokeTc.LoginAnsellGuardianTC05"/>
+			<class name="agc_SmokeTc.LoginAnsellGuardianTC06"/>
+			<class name="agc_SmokeTc.ACS_Enter_Chemicals_Using_Search_Text_Field_TC07"/>
+			<class name="agc_SmokeTc.ACS_Cas_Number_Sorting_TC08"/>
+			<class name="agc_SmokeTc.ACS_Chemicals_Sorting_TC09"/>
+			<class name="agc_SmokeTc.ACS_Concentration_Sorting_TC10"/>
+			<class name="agc_SmokeTc.ACS_Physical_State_Sorting_TC11"/>
+			<class name="agc_SmokeTc.ACS_Remove_Multiple_chemicls_TC12"/>
+			<class name="agc_SmokeTc.Delete_the_specific_chemical_in_ACS_TC13"/>
+			<class name="agc_SmokeTc.ACS_OtherHazards_Disable_TC14"/>
+			<class name="agc_SmokeTc.ACS_chemical_tab_Disable_TC15"/>
+			<class name="agc_SmokeTc.ACS_selecting_more_than_5_hazards_and_shows_warning_message_TC16"/>
+			<class name="agc_SmokeTc.Change_of_flag_symbols_TC17"/>
+			<class name="agc_SmokeTc.Create_New_Risk_Request_TC18"/>
+			<!-- Missing Test Case -->
+			<!-- <class name="agc_SmokeTc.Contact_Us_TC19"/> -->
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_Enter_Chemicals_Using_Search_Text_Field_TC20"/>
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_Cas_Number_Sorting_TC21"/>
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_Concentration_Sorting_TC22"/>
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_Chemicals_Sorting_TC23"/>
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_Physical_State_Sorting_TC24"/>
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_Remove_Multiple_chemicls_TC25"/>
+			<class name="ACS_Basic_Anonymous.Delete_withoutLogin_the_specific_chemical_in_ACS_TC26"/>
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_OtherHazards_Disable_TC27"/>
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_chemical_tab_Disable_TC28"/>
+			<class name="ACS_Basic_Anonymous.ACS_withoutLogin_selecting_more_than_5_hazards_and_shows_warning_message_TC29"/>
+			<class name="ACS_Basic_Anonymous.withoutLogin_Change_of_flag_symbols_TC30"/>
+			<class name="ACS_Basic_Anonymous.withoutLogin_contactus_TC32"/>
+			<!-- Basic Group Test Cases -->
+			<class name="ACS_Basic_Anonymous.Basic_ACS_Enter_Chemicals_Using_Search_Text_Field_TC33"/>
+			<class name="ACS_Basic_Anonymous.Basic_ACS_Cas_Number_Sorting_TC34"/>
+			<class name="ACS_Basic_Anonymous.Basic_ACS_Chemicals_Sorting_TC35"/>
+			<class name="ACS_Basic_Anonymous.Basic_ACS_Concentration_Sorting_TC36"/>
+			<class name="ACS_Basic_Anonymous.Basic_ACS_Physical_State_Sorting_TC37"/>
+			<class name="ACS_Basic_Anonymous.Basic_ACS_Remove_Multiple_chemicls_TC38"/>
+			<class name="ACS_Basic_Anonymous.Basic_Delete_the_specific_chemical_in_ACS_TC39"/>
+			<class name="ACS_Basic_Anonymous.Basic_ACS_OtherHazards_Disable_TC40"/>
+			<class name="ACS_Basic_Anonymous.Basic_ACS_chemical_tab_Disable_TC41"/>
+			<class name="ACS_Basic_Anonymous.Basic_ACS_selecting_more_than_5_hazards_and_shows_warning_message_TC42"/>
+			<class name="agc_SmokeTc.ACS_Warning_message_for_Selecting_more_than_5_chemicals_43"/>
+			<class name="agc_SmokeTc.PADD_Creating_new_single_chemical_44"/>
+			<class name="agc_SmokeTc.PADD_Adding_multiple_chemicals_dialogue_box_functionality_TC45"/>
+			<class name="agc_SmokeTc.ACS_Search_Using_Cas_Number_46"/>
+			<class name="agc_SmokeTc.PADD_Create_new_mixture_TC47"/>
+			<class name="agc_SmokeTc.PADD_Search_product_by_product_name_HP_TC48"/>
+			<class name="agc_SmokeTc.PADD_Search_product_by_product_name_BP_TC49"/>
+			<class name="agc_SmokeTc.PADD_SearchProductsbyMaterial_HP_TC50"/>
+			<class name="agc_SmokeTc.PADD_Removing_existing_single_TC51"/>
+			<class name="agc_SmokeTc.PADD_Removing_existing_mixtures_52"/>
+			<class name="agc_SmokeTc.PADD_Select_and_remove_both_existing_single_mixture_TC53"/>
+			<class name="agc_SmokeTc.PADD_Removing_new_mixtures_TC54"/>
+			<class name="agc_SmokeTc.PADD_Removing_new_single_chemical_TC55"/>
+			<class name="agc_SmokeTc.PADD_Select_single_and_mixture_new_chemical_TC56"/>
+			<class name="agc_SmokeTc.PADD_Selecting_and_removing_all_products_57"/>
+			<class name="agc_SmokeTc.PADD_upload_MSDS_with_chemicals_58"/>
+			<class name="agc_SmokeTc.PADD_upload_MSDS_without_chem_59"/>
+			<class name="agc_SmokeTc.PADD_verify_MSDS_Download_button_60"/>
+			<class name="agc_SmokeTc.PADD_Verify_Deleting_MSDC_pdf_attachment_61"/>
+			<class name="agc_SmokeTc.PADD_Sort_by_CAS_number_62"/>
+			<class name="agc_SmokeTc.PADD_Sort_by_chemical_Name_63"/>
+			<class name="agc_SmokeTc.PADD_Sort_by_performance_64"/>
+			<class name="agc_SmokeTc.PADD_Show_productinfo_clickingon_Vlike_symbol_65"/>
+			<class name="agc_SmokeTc.PADD_Select_product_checkbox_and_delete_66"/>
+			<class name="agc_SmokeTc.PADD_Check_for_standards_ASTM_HP_67"/>
+			<class name="agc_SmokeTc.PADD_Check_for_standards_EN374_HP_68"/>
+			<class name="agc_SmokeTc.PADD_Checking_all_chart_types_69"/>
+			<class name="agc_SmokeTc.PADD_Load_productsBy_region_specific_defaults_70"/>
+			<class name="agc_SmokeTc.PADD_view_productinfo_ByClickingOnDots_71"/>
+			<class name="agc_SmokeTc.PADD_Drag_and_Drop_products_72"/>
+			<class name="agc_SmokeTc.PADD_Crud_operations_on_comments_73"/>
+			<class name="agc_SmokeTc.PADD_CrudOperationsOnTemplate_74"/>
+			<class name="agc_SmokeTc.PADD_View_all_feature_in_FAQ_76"/>
+			<class name="agc_SmokeTc.PADD_Verify_selected_FAQs_displayed_77"/>
+			<class name="agc_SmokeTc.PADD_Verify_Deleting_selected_chemicals_78"/>
+			<class name="agc_SmokeTc.Padd_Verify_adding_suggested_products_79"/>
+			<class name="agc_SmokeTc.PADD_Check_for_standards_BT1_0_BP_80"/>
+			<class name="agc_SmokeTc.PADD_Check_for_standards_BT0_1_BP_81"/>
+			<class name="agc_SmokeTc.PADD_Edit_concentration_within100_82"/>
+			<class name="agc_SmokeTc.PADD_Check_for_errorMessage_for_update_concentrationAbove100_83"/>
+			<class name="agc_SmokeTc.PADD_Check_for_errorMessage_for_updating_concentrationBelow1_84"/>
+			<class name="agc_SmokeTc.PADD_Update_concentration_with_decimalValues_85"/>
+				<class name="agc_SmokeTc.PADD_Check_pagination_100chem_10rec_86"/>
+				<class name="agc_SmokeTc.PADD_Check_pagination_18chem_10rec_87"/>
+				<class name="agc_SmokeTc.PADD_Check_pagination_100chem_50rec_88"/>
+				<class name="agc_SmokeTc.PADD_Check_pagination_18chem_50rec_89"/>
+				<class name="agc_SmokeTc.PADD_Check_pagination_18chem_20rec_90"/>
+				<class name="agc_SmokeTc.PADD_Check_pagination_18chem_30rec_91"/>
+				<class name="agc_SmokeTc.PADD_Check_pagination_100chem_20rec_92"/>
+				<class name="agc_SmokeTc.PADD_Check_pagination_100chem_30rec_93"/>
+		</classes>
+	</test>
+
+</suite> <!-- Smoke Suite -->
