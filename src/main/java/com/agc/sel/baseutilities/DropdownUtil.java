@@ -1,7 +1,6 @@
 package com.agc.sel.baseutilities;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import com.agc.sel.loggers.Logger4j;

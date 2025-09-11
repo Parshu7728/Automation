@@ -1747,6 +1747,16 @@ public class Padd_Methods {
 //            Logger4j.error("Pagination mismatch: expected " + expected + " but got " + finalCount);
 //        }
 //    }
+
+    public void uploadTemplate18_dataTest() throws InterruptedException {
+        time.waitAndClick(uploadTemplateButton);
+        assertionCheck.verification(uploadFile_popup.getText(),"Upload File");
+        DropdownUtil.selectByIndex(chemicalTemplateDropdown,2);
+        time.waitAndClick(TemplateDownloadButton);
+        time.waitAndClick(uploadButton);
+        time.invisibilityof(uploadLoader);
+        Thread.sleep(4000);//For Backend processing
+    }
 public void uploadTemplate100_dataTest() throws InterruptedException {
     time.waitAndClick(uploadTemplateButton);
     assertionCheck.verification(uploadFile_popup.getText(),"Upload File");

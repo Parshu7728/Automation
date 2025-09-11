@@ -26,7 +26,7 @@ public class PADD_TestData_utilities {
     public String records_per_page10(){ return p.getProperty("recordsPerPage1"); }
     public String records_per_page20(){ return p.getProperty("recordsPerPage2"); }
     public String records_per_page30(){ return p.getProperty("recordsPerPage3"); }
-    public String records_per_page50(){ return p.getProperty("recordsPerPage5"); }
+    public String records_per_page50(){ return p.getProperty("recordsPerPage4"); }
     public int number_of_chemicals18(){ return Integer.parseInt(p.getProperty("numberOfChemicals1"));}
     public int number_of_chemicals100(){ return Integer.parseInt(p.getProperty("numberOfChemicals2"));}
 

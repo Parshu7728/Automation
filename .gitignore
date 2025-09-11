@@ -1,0 +1,32 @@
+# Maven
+#target/
+pom.xml.versionsBackup
+release.properties
+
+# Java
+*.class
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test reports and generated artifacts
+#test-output/
+extentreport_file/
+Compare-reports/
+Pdfdownload/
+
+# Misc
+*.tmp
+*.bak
